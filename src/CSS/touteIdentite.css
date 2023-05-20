@@ -1,0 +1,161 @@
+:root{
+    --color1:rgb(6, 29, 80);
+    --color2: rgb(243, 242, 232);;
+    --color3: white;
+    --font1: 'Times New Roman', Times, serif; 
+    --font2: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+
+#recherche{
+    /*position:fixed;*/
+    width: 100%;
+    height: 10%;
+    margin-top: 1%;
+    margin-right: 20px;
+    /* margin-left: 52%; */
+}
+
+#rechercher{
+    color: var(--color1);
+    border: 1px solid var(--color1);
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    /* clear: both; */
+    transition: 1s;
+}
+
+#aRechercher{
+    border: 1px solid rgb(221, 220, 220);
+    box-shadow: 1px var(--color1);
+    width: 250px;
+    height: 40px;
+    transition: 1s;
+    float: right;
+    outline: none;
+    padding: 5px;
+}
+
+#aRechercher:hover{
+    cursor: pointer;
+    background-color: var(--color1);
+    color: white;
+}
+
+
+
+#rechercher:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--color1);
+}
+
+#listesGrille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    width: 94%;
+    margin: 2% auto;
+}
+
+.caseT{
+    width: 102%;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-family: var(--font2);
+    background-color: var(--color1);
+}
+
+.caseId{
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-family: var(--font2);
+    background-color: var(--color1);
+}
+
+.caseN{
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 96%;
+    height: 40px;
+    font-family: var(--font2);
+    border-bottom: 1px solid rgb(53, 51, 51);
+}
+
+.case{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 96%;
+    height: 40px;
+    margin: 0.15px;
+}
+
+.modifier{
+    /* width: 100%; */
+    width: 100px;
+    height: 100%;
+    color: var(--color1);
+    background-color: white;
+    border: 1px solid var(--color1);
+    transition: 1s;
+}
+
+.modifier:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--color1);
+}
+
+
+
+.btn-retour{
+    padding: 5px;
+    border: 1px solid var(--color1);
+    font-family: var(--font1);
+    color: var(--color1);
+    float: right;
+    transition: 0.5s;
+    margin: 10px 20px;
+}
+
+.btn-retour:hover {
+    cursor: pointer;
+    background-color: var(--color1);
+    color: white;
+    
+}
+
+
+.modifier:active, #rechercher:active, .btn-retour:active{
+    transform: scale(1);
+}
+
+@media screen and (max-width: 1000px) {
+    .div-formulaire{
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #rechercher{
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    #aRechercher{
+        width: 100%;
+        display: block;
+    }
+
+}

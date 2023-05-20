@@ -1,0 +1,288 @@
+:root{
+    --color1: rgb(6, 29, 80);
+    --color2: black;
+    --color3: black;
+    --font1: 'Times New Roman', Times, serif; 
+    --font2: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+.super-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: calc(100% - 15%);
+    height: 500px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: white;
+    box-shadow: 0px 0px 20px -8px black;
+    overflow: hidden;
+}
+
+.title{
+    background-color: var(--color1);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container-formulaire{
+    background-color: white;
+    position: relative; 
+}
+
+.div-formulaire{
+    
+    position: absolute;
+    top: -32%;
+    left: 52%;
+    transform: translate(-60%,-50%);
+    width: 100%;
+    height: 50%;
+    z-index: 1000;
+
+    /* background-color: rgb(225, 236, 236); */
+    background-color: whitesmoke;
+    border: 1px solid rgb(225, 236, 236);
+    box-shadow: 1px 1px 1px 1px rgb(211, 197, 197);
+}
+
+#myIdentity{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+
+.menu{
+    width: 60%;
+    height: 40%;
+    margin: 30% 7%;
+    color: white;
+    font-family: var(--font2);
+}
+
+
+td{
+    width: 0px;
+}
+
+/* ***************** cercle  ********************* */
+
+.decoration{
+    width: 100%;
+    height: 100%;
+    display: inline;
+}
+
+.Mi-cercle-right{
+    position: relative;
+    margin-left: 50%;
+    border-radius:350px ;
+    background-color: var(--color1);
+    /* transform: translate(40%,0%); */
+    border: none;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.interCercle{
+    border-radius:175px ;
+    margin-left: 60px;
+    margin-top: 75px;
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    text-align: center; 
+}
+.interCercle1{
+    border-radius:115px ;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    text-align: center; 
+}
+.interCercle p{
+    color: var(--color1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.myIdentity{
+    position: absolute;
+    /* margin-top: 15%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* *********** choix accueil ******************* */
+.choix a{
+    display: block;
+}
+.choix{
+    /* border: 1px solid black; */
+    display: inline-block;
+    position: absolute;
+    top: 27%;
+    left: 155%;
+    /* top: 15%;
+    left: 40%; */
+    
+    z-index: 10;
+}
+
+.choixAcceder{
+    /* border: 1px solid black; */
+    display: block;
+    position: absolute;
+    /* top: 20%; */
+    margin-top: 12%;
+    left: 150%;
+    top: 15%;
+    left: 30%; 
+    width: 220px;
+    z-index: 10;
+}
+
+.btn-inscrire, .btn-acceder, .btn-creer{
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: white;
+    border: 1px solid var(--color1);
+    background-color: var(--color1);
+    transition: 0.5s;
+}
+.btn-inscrire:hover, .btn-acceder:hover, .btn-creer:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+}
+
+.btn-inscrire:active, .btn-acceder:active, .btn-creer:active{
+    transform: scale(1);
+}
+
+/*-------------Fenetre modale ---------*/
+.modal-window{
+    display: display;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(140, 143, 155, 0.788);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    font-size: 4.lem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.modal-window h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    display: inline;
+    color: var(--color1);
+}
+.cercle-modale{
+    margin-top: 3%;
+    margin-left: 25%;
+    width:50% ;
+    height:400px ;
+    background: url(../img/identity.png) no-repeat fixed center/cover;
+    border: none;
+    overflow: hidden;
+    background-size: 90%;
+    z-index: 1;
+}
+
+.btn{
+    position: absolute;
+    z-index: 100;
+    top:80%;
+    margin-left: -4%;
+    background-color: #050647;
+    width: 100px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid var(--color1);
+}
+.btn:active{
+    transform: scale(1.5);
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    transition: 1s;
+    color: var(--color1);
+}
+
+.fermer{
+    position: absolute;
+    left: 98%;
+}
+.fermer p{
+    font-size: 30px;
+    padding: 0;
+}
+.fermer p:hover{
+    cursor: pointer;
+    border: 1px solid ;
+  
+}
+
+
+.grandTitre{
+    width: 250px;
+    font-size: 30px;
+    color: var(--color1);
+    margin-top: -400px;
+    margin-left: 150%;
+    position: relative;
+    z-index: 100;
+}
+
+.grandTitre1{
+    width: 250px;
+    font-size: 30px;
+    color: var(--color1);
+    margin-top: -450px; 
+    margin-left: 28%;
+    /* position: relative; */
+    z-index: 100;
+}
+@media screen and (max-width:800px) {
+    .cercle-modale{
+        width: 62%;
+    }
+    .grandTitre1, .grandTitre{
+        font-size: 20px;
+        margin-left: 28%;
+    }
+}
+@media screen and (max-width:700px) {
+    .cercle-modale{
+        background-size: 100%;
+    }
+}

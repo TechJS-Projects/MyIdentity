@@ -1,0 +1,7 @@
+.choix{
+    display: inline-block;
+    position: absolute;
+    top: 14%;
+    left: 40%;
+    transform: translate(-50%,50%);
+}
